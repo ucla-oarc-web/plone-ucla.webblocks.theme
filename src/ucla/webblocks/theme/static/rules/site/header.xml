@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+    
+    <!-- site title -->
+	<replace css:theme-children="#site-header-title" css:content="#portal-logo" />
+    
+    <!-- site subtitle -->
+	<replace css:theme-children="#site-header-subtitle" css:content="#departmenttitle" />
+    
+    <!-- site search box -->
+	<replace css:theme-children="#site-header-search" css:content="#portal-searchbox" />
+    
+    <!-- megamenu -->
+	<replace css:theme-children="#site-header-navigation">
+        <ul id="portal-globalnav">
+            <xsl:for-each css:select="ul#portal-globalnav > li">
+                <li>
+                    <h1>
+                        <xsl:copy-of select="a"/>
+                    </h1>
+                    <xsl:choose>
+                        <xsl:when test="ul/li[3]">
+                            <div class="row medium-collapse">
+                                <div class="panel-6">
+                                    <div class="row small-collapse">
+                                        <div class="panel-6">
+                                            <xsl:copy-of select="ul/li[1]/*"/>
+                                        </div>
+                                        <div class="panel-6">
+                                            <xsl:copy-of select="ul/li[2]/*"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-6">
+                                    <div class="row small-collapse">
+                                        <div class="panel-6">
+                                            <xsl:copy-of select="ul/li[3]/*"/>
+                                        </div>
+                                        <div class="panel-6">
+                                            <xsl:copy-of select="ul/li[4]/*"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:choose>
+                                <xsl:when test="ul/li[2]">
+                                    <div class="row small-collapse">
+                                        <div class="panel-6">
+                                            <xsl:copy-of select="ul/li[1]/*"/>
+                                        </div>
+                                        <div class="panel-6">
+                                            <xsl:copy-of select="ul/li[2]/*"/>
+                                        </div>
+                                    </div>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:copy-of select="ul/li[1]/*"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </li>
+            </xsl:for-each>
+        </ul>
+    </replace>
+    
+    <!-- audience nav -->
+    <replace css:theme-children="#site-header-audience > h1" css:content="#utilitytitle" css:if-content="#utilitytitle" />
+    <after css:theme-children="#site-header-audience" css:content="#utilitynav" />
+    
+</rules>
