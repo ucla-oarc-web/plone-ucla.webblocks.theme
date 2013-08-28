@@ -15,7 +15,7 @@ LICENSE
 
 The WebBlocks Plone Theme is open-source software licensed under the BSD 3-clause license. The full text of the license may be found in the LICENSE.txt file on online in the GitHub repository:
 
-    https://github.com/ucla/WebBlocks-Plone-theme/blob/master/LICENSE
+    https://github.com/ucla/WebBlocks-Plone-theme/blob/master/LICENSE.txt
 
 CREDITS
 =======
