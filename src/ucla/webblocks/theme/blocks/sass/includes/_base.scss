@@ -1,0 +1,19 @@
+body { 
+	font: normal 400 81.3%/1.4 "ProximaNova", Verdana, sans-serif;
+    background-image: url(../img/background.jpg);
+    background-repeat: repeat; 
+    background-color: #e0edff;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    &, &.nav-header {
+        color: #4e8db6; 
+        line-height:1.2; /* remove? */
+        margin-bottom:10px;  /* remove? */
+    }
+}
+
+p { 
+    margin:0 0 15px 0;  /* remove? */
+}
