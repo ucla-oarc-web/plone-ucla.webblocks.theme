@@ -13,7 +13,13 @@
             <xi:include href="rules/site/head.xml" />
             <xi:include href="rules/site/header.xml" />
             <xi:include href="rules/site/footer.xml" />
-            <xi:include href="rules/main.xml" />
+            <xi:include href="rules/page.xml" />
+            
+        </rules>
+    
+        <rules css:if-not-content="body.portaltype-ucla-content-marketinglanding, body.portaltype-ucla-content-billboard">
+            
+            <xi:include href="old/rules.xml" />
             
         </rules>
 	

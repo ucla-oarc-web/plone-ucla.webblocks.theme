@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+        
+    <rules css:if-content="#portal-column-two">
+        
+        <rules css:if-content="#portal-column-one">
+            
+            <prepend css:theme="#page-panel-wrapper"><xsl:attribute name="class">panel-9</xsl:attribute></prepend>
+            <prepend css:theme="#page-panel-two"><xsl:attribute name="class">panel-3</xsl:attribute></prepend>
+
+            <prepend css:theme="#page-panel-one"><xsl:attribute name="class">panel-4</xsl:attribute></prepend>
+            <prepend css:theme="#page-content"><xsl:attribute name="class">panel-8</xsl:attribute></prepend>
+            
+        </rules>
+        
+        <rules css:if-not-content="#portal-column-one">
+            
+            <drop css:theme="#page-panel-one" />
+            <strip css:theme="#page-inner-row" />
+            <strip css:theme="#page-panel-wrapper" />
+
+            <prepend css:theme="#page-content"><xsl:attribute name="class">panel-9</xsl:attribute></prepend>
+            <prepend css:theme="#page-panel-two"><xsl:attribute name="class">panel-3</xsl:attribute></prepend>
+            
+        </rules>
+
+    </rules>
+    
+    <rules css:if-not-content="#portal-column-two">
+        
+        <drop css:theme="#page-panel-two" />
+        <strip css:theme="#page-panel-wrapper" />
+        <strip css:theme="#page-outer-row" />
+        
+        <rules css:if-content="#portal-column-one">
+            
+            <prepend css:theme="#page-content"><xsl:attribute name="class">panel-9</xsl:attribute></prepend>
+            <prepend css:theme="#page-panel-one"><xsl:attribute name="class">panel-3</xsl:attribute></prepend>
+            
+        </rules>
+        
+        <rules css:if-not-content="#portal-column-one">
+            
+            <drop css:theme="#page-panel-one" />
+            <strip css:theme="#page-inner-row" />
+            
+        </rules>
+        
+    </rules>
+    
+</rules>
