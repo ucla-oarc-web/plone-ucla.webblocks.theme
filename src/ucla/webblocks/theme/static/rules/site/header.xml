@@ -6,10 +6,10 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
     
     <!-- site title -->
-	<replace css:theme-children="#site-header-title" css:content="#portal-logo" />
+	<replace css:theme-children="#site-header-title-primary" css:content="#portal-logo" />
     
     <!-- site subtitle -->
-	<replace css:theme-children="#site-header-subtitle" css:content="#departmenttitle" />
+	<replace css:theme-children="#site-header-title-secondary" css:content="#departmenttitle" />
     
     <!-- site search box -->
 	<replace css:theme-children="#site-header-search" css:content="#portal-searchbox" />
