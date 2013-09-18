@@ -1,4 +1,16 @@
+#site-header { 
+    
+    background-color: #2c5e91 !important;
+    background: #2c5e91 url('../img/header-bg.jpg') repeat-x top; 
+    padding: 20px 0 6px 0;
+    position: relative;
+    
+}
+
+#site-header {
+    min-height:130px;
+}
+
 @import "header/_title";
 @import "header/_search";
 @import "header/_navigation";
-@import "header/_audience";

@@ -1,0 +1,48 @@
+#site-topbar-audience {
+    
+    h1 {
+        font-size: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+                
+    ul {
+    
+        @extend .float-right-above-small;
+        @extend ul.list.unstyled;
+
+        margin: 0;
+
+        > li {
+            
+            @extend .float-left-above-small;
+
+            &:first-child {
+                background: none;
+            }
+
+            > a { 
+
+                &:hover {
+                    color: #955efc; /* use WebBlocks color */
+                }
+            }
+        }	
+    }
+}
+
+@media (min-width: $breakpoint-small+1) {
+
+    #site-topbar-audience ul > li {
+        background: url('../img/blue-divider.gif') no-repeat left center;
+    }
+
+    #site-topbar-audience ul > li {
+        margin:0 0 0 10px; 
+        padding:0 0 0 10px; 
+    }
+
+    #site-topbar-audience ul > li > a {
+        vertical-align: bottom; 
+    }
+}

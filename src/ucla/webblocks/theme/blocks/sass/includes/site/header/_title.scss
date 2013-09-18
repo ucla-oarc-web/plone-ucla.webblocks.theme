@@ -1,0 +1,21 @@
+#site-header-title-primary, #site-header-title-secondary { 
+    color: #fff; 
+    font-family: Arial, Caslon, Georgia, Times, serif; 
+    font-weight: 400; 
+    text-transform: none; 
+}
+
+#site-header-title-primary { 
+    font-size: 1.5em; 
+}
+
+#site-header-title-secondary { 
+    font-size: 1.231em; 
+    margin: -8px 0 10px 76px; 
+}
+
+#site-header-title a,
+#site-header-title a:visited { 
+    color: #fff;
+    text-decoration: none;
+}

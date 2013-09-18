@@ -21,20 +21,31 @@
     
     <body>
         
-        <header id="site-header" role="banner">
+        <div id="site-topbar" class="container">
             
-            <hgroup class="site-header-title">
-                <h1 id="site-header-title-primary"></h1>
-                <h2 id="site-header-title-secondary"></h2>
-            </hgroup>
-            
-            <nav id="site-header-search" role="search"></nav>
-            
-            <nav id="site-header-navigation" role="navigation"></nav>
-            
-            <nav id="site-header-audience" role="navigation">
+            <nav id="site-topbar-editing" class="float-container"></nav>
+            <nav id="site-topbar-personal" class="float-container"></nav>
+
+            <nav id="site-topbar-audience" role="navigation">
                 <h1><a href="http://ucla.edu" target="_blank">UCLA.edu</a></h1>
             </nav>
+            
+        </div>
+        
+        <header id="site-header" role="banner">
+            
+            <div class="container">
+            
+                <hgroup class="site-header-title">
+                    <h1 id="site-header-title-primary"></h1>
+                    <h2 id="site-header-title-secondary"></h2>
+                </hgroup>
+
+                <nav id="site-header-navigation" role="navigation"></nav>
+            
+            </div>
+
+            <nav id="site-header-search" role="search"></nav>
             
         </header>
         

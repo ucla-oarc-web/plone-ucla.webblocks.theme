@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+    
+    <drop css:theme="#site-topbar-editing" css:if-not-content="#edit-bar"/>
+    <replace css:theme-children="#site-topbar-editing" css:content="#edit-bar"/>
+    
+    <drop css:theme="#portal-personaltools-wrapper" css:if-not-content="#edit-bar"/>
+	<replace css:theme-children="#site-topbar-personal" css:content="#portal-personaltools-wrapper"/>
+    
+    <replace css:theme-children="#site-topbar-audience > h1" css:content="#utilitytitle" css:if-content="#utilitytitle" />
+    <before css:theme-children="#site-topbar-audience" css:content="#audience-nav ul" />
+    
+</rules>
