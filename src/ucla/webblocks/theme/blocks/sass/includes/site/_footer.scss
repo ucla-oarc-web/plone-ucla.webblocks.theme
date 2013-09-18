@@ -1,3 +1,41 @@
-@import "footer/_navigation";
-@import "footer/_actions";
-@import "footer/_colophon";
+#site-footer { 
+    
+    border-top:1px solid #17244c;
+    background: #2c5e91 url(../img/footer-bg.jpg) repeat-x bottom; 
+    padding: 18px 0 14px 0;
+    margin: 40px 0 6px 0;
+    margin-bottom: 6px;
+    color: #fff;
+    
+    ul {
+        
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            
+            display: inline;
+            background: url('../img/white-divider.gif') no-repeat left center; 
+            padding:0 0 0 8px; 
+            margin:0 0 0 8px;
+            
+            &:first-child {
+                background: none;
+                margin-left: 0;
+                padding-left: 0;
+            }
+            
+            a {
+                color: #fff;
+                text-decoration: none; 
+            }
+            
+        }
+    }
+    
+}
+
+@import "footer/navigation";
+@import "footer/actions";
+@import "footer/colophon";

@@ -60,7 +60,9 @@
                                     </div>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <xsl:copy-of select="ul/li[1]/*"/>
+                                    <div>
+                                        <xsl:copy-of select="ul/li[1]/*"/>
+                                    </div>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:otherwise>

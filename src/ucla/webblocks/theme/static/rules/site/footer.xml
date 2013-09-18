@@ -6,12 +6,14 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
     
     <!-- site footer -->
-	<replace css:theme-children="#site-footer-navigation" css:content="#portal-footer" />
+	<before css:theme-children="#site-footer" css:content="#portal-footer" />
     
     <!-- site actions -->
+	<drop css:theme="#site-footer-actions" css:if-not-content="#portal-siteactions" />
 	<replace css:theme-children="#site-footer-actions" css:content="#portal-siteactions" />
     
     <!-- site colophon -->
+	<drop css:theme="#site-footer-colophon" css:if-not-content="#portal-colophon" />
 	<replace css:theme-children="#site-footer-colophon" css:content="#portal-colophon" />
     
 </rules>
