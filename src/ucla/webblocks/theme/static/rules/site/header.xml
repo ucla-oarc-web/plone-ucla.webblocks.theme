@@ -22,51 +22,53 @@
                     <h1>
                         <xsl:copy-of select="a"/>
                     </h1>
-                    <xsl:choose>
-                        <xsl:when test="ul/li[3]">
-                            <div class="row medium-collapse">
-                                <div class="panel-6">
-                                    <div class="row small-collapse">
-                                        <div class="panel-6">
-                                            <xsl:copy-of select="ul/li[1]/*"/>
+                    <div class="dropdown">
+                        <xsl:choose>
+                            <xsl:when test="ul/li[3]">
+                                <div class="row medium-collapse">
+                                    <div class="panel-6">
+                                        <div class="row small-collapse">
+                                            <div class="panel-6">
+                                                <xsl:copy-of select="ul/li[1]/*"/>
+                                            </div>
+                                            <div class="panel-6">
+                                                <xsl:copy-of select="ul/li[2]/*"/>
+                                            </div>
                                         </div>
-                                        <div class="panel-6">
-                                            <xsl:copy-of select="ul/li[2]/*"/>
+                                    </div>
+                                    <div class="panel-6">
+                                        <div class="row small-collapse">
+                                            <div class="panel-6">
+                                                <xsl:copy-of select="ul/li[3]/*"/>
+                                            </div>
+                                            <div class="panel-6">
+                                                <xsl:copy-of select="ul/li[4]/*"/>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel-6">
-                                    <div class="row small-collapse">
-                                        <div class="panel-6">
-                                            <xsl:copy-of select="ul/li[3]/*"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:choose>
+                                    <xsl:when test="ul/li[2]">
+                                        <div class="row small-collapse">
+                                            <div class="panel-6">
+                                                <xsl:copy-of select="ul/li[1]/*"/>
+                                            </div>
+                                            <div class="panel-6">
+                                                <xsl:copy-of select="ul/li[2]/*"/>
+                                            </div>
                                         </div>
-                                        <div class="panel-6">
-                                            <xsl:copy-of select="ul/li[4]/*"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:choose>
-                                <xsl:when test="ul/li[2]">
-                                    <div class="row small-collapse">
-                                        <div class="panel-6">
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <div>
                                             <xsl:copy-of select="ul/li[1]/*"/>
                                         </div>
-                                        <div class="panel-6">
-                                            <xsl:copy-of select="ul/li[2]/*"/>
-                                        </div>
-                                    </div>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <div>
-                                        <xsl:copy-of select="ul/li[1]/*"/>
-                                    </div>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:otherwise>
-                    </xsl:choose>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </div>
                 </li>
             </xsl:for-each>
         </ul>
