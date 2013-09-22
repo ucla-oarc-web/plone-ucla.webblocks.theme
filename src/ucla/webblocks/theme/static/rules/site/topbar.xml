@@ -8,10 +8,11 @@
     <drop css:theme="#site-topbar-editing" css:if-not-content="#edit-bar"/>
     <replace css:theme-children="#site-topbar-editing" css:content="#edit-bar"/>
     
-    <drop css:theme="#portal-personaltools-wrapper" css:if-not-content="#edit-bar"/>
+    <drop css:theme="#site-topbar-personal" css:if-not-content="#portal-personaltools-wrapper"/>
 	<replace css:theme-children="#site-topbar-personal" css:content="#portal-personaltools-wrapper"/>
     
     <replace css:theme-children="#site-topbar-audience > h1" css:content="#utilitytitle" css:if-content="#utilitytitle" />
+    <drop css:theme="#site-topbar-audience" css:if-not-content="#audience-nav ul"/>
     <before css:theme-children="#site-topbar-audience" css:content="#audience-nav ul" />
     
 </rules>
