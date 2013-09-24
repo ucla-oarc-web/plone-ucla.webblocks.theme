@@ -8,7 +8,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 { 
     &, &.nav-header {
-        color: #4e8db6; 
+        color: #4e8db6;  /* TODO: move the nav-header component to the navigation region! */
         line-height:1.2; /* remove? */
         margin-bottom:10px;  /* remove? */
     }
