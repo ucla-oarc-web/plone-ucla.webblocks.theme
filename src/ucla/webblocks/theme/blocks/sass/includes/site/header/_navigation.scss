@@ -85,6 +85,10 @@
                 text-decoration: none;
                 color: #4E8DB6;
             }
+            
+            &:last-child {
+                border-bottom: none;
+            }
 
         }
         
