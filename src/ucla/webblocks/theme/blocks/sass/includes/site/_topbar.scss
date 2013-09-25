@@ -8,18 +8,16 @@
 	z-index:9000;
     */
     
-    padding-top: 6px;
     padding-bottom: 6px;
+    
+    .container {
+        padding-top: 6px;
+    }
     
 }
 
-#site-topbar-audience, #site-topbar-editing, #site-topbar-personal {
-    margin-bottom: 3px;
-}
-
-@import "topbar/audience";
 @import "topbar/editing";
-@import "topbar/personal";
+@import "topbar/navigation";
 
 
 

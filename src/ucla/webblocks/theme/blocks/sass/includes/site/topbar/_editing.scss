@@ -1,3 +1,32 @@
 #site-topbar-editing {
+    margin-bottom: 3px;
+    height: 2.1em;
+}
 
+#edit-bar {
+    width: 100%;
+    border-width: 0px;
+    height: 1em;
+    padding-top: 0.5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 11px;
+}
+
+#edit-bar .contentViews {
+    height: 1em;
+    padding: 0;
+    margin: 0 0 0 40px;
+}
+#edit-bar #contentActionMenus {
+    margin-right: 40px;
+}
+#edit-bar .actionMenu {
+    margin-top: 0;
+}
+
+#edit-bar .actionMenuContent ul {
+    padding: 3px 6px;
+    list-style: none;
 }

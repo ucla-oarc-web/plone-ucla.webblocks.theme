@@ -1,0 +1,35 @@
+#site-topbar-personal {
+    height: 0;
+}
+
+#portal-personaltools-wrapper {
+    
+    dl {
+        margin-top: 0;
+        margin-bottom: 0;
+        background: url('../img/blue-divider.gif') no-repeat left center;
+        padding-left: 10px;
+        margin-left: 10px;
+        &.activated {
+            background-color: #fff;
+            background-image: none;
+        }
+        dt, #user-name {
+            margin: 0;
+        }
+    }
+    
+    
+    .actionMenuContent {
+        right: 0;
+        background-color: #fff;
+        ul {
+            list-style-type: none;
+            padding: 5px 8px 3px;
+            margin: 0;
+            li {
+                padding: 3px 0;
+            }
+        }
+    }
+}
