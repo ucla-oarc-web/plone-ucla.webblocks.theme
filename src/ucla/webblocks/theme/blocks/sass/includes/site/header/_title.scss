@@ -7,6 +7,10 @@
 
 #site-header-title-primary { 
     font-size: 1.5em; 
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 #site-header-title-secondary { 

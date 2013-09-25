@@ -4,36 +4,60 @@
     background: #2c5e91 url('../img/header-bg.jpg') repeat-x top; 
     padding: 20px 0 6px 0;
     
-}
+    > .container {
+    
+        position: relative;
 
-#site-header > .container {
-    
-    position: relative;
-    
-    /* 
-    box model hack for relative position with absolute position children 
-    https://github.com/ucla/WebBlocks/issues/461
-    */
-    @if $structure-container-width-max {
-        @media screen 
-            and (max-width: $structure-container-width-max 
-                                + $structure-container-width-max 
-                                    * (($structure-container-gutter*2)/100%) )
-            and (min-width: $breakpoint-small+1) {
+        /* 
+        box model hack for relative position with absolute position children 
+        https://github.com/ucla/WebBlocks/issues/461
+        */
+        @if $structure-container-width-max {
+            @media screen 
+                and (max-width: $structure-container-width-max 
+                                    + $structure-container-width-max 
+                                        * (($structure-container-gutter*2)/100%) )
+                and (min-width: $breakpoint-small+1) {
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: $structure-container-gutter;
+                    margin-right: $structure-container-gutter;
+            }
+        } @else {
+            @media screen 
+                and (min-width: $breakpoint-small+1) {                                       
+                width: 100% - ($structure-container-gutter*2);
                 padding-left: 0;
                 padding-right: 0;
                 margin-left: $structure-container-gutter;
                 margin-right: $structure-container-gutter;
+            }
         }
-    } @else {
-        @media screen 
-            and (min-width: $breakpoint-small+1) {                                       
-            width: 100% - ($structure-container-gutter*2);
-            padding-left: 0;
-            padding-right: 0;
-            margin-left: $structure-container-gutter;
-            margin-right: $structure-container-gutter;
+    }
+    
+    
+    #site-header-expand {
+        display: none;
+    }
+    
+    @media (max-width:$breakpoint-small){
+
+        .hide-accessible-small {
+            @include -base-visibility-hide-accessible;
+            @include -base-visibility-hide-accessible-focusable;
         }
+
+        #site-header-expand {
+            display: block;
+            float: right;
+            
+            .icon-menu-white {
+                width: 16px;
+                height: 16px;
+                background-image: url('../img/white-menu.png');
+            }
+        }
+
     }
     
 }
