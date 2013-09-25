@@ -17,12 +17,7 @@
             <xi:include href="rules/page.xml" />
             
         </rules>
-    
-        <rules css:if-not-content="body.portaltype-ucla-content-marketinglanding, body.portaltype-ucla-content-billboard">
-            
-            <xi:include href="old/rules.xml" />
-            
-        </rules>
 	
 	</rules>
+    
 </rules>
