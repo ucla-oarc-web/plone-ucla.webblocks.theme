@@ -6,7 +6,7 @@
     xmlns:xi="http://www.w3.org/2001/XInclude">
     
     <!-- site footer -->
-	<before css:theme-children="#site-footer" css:content="#portal-footer" />
+	<replace css:theme-children="#site-footer-content" css:content="#portal-footer" />
     
     <!-- site actions -->
 	<drop css:theme="#site-footer-actions" css:if-not-content="#portal-siteactions" />

@@ -1,5 +1,9 @@
 #site-footer { 
     
+    .container {
+        position: relative;
+    }
+    
     border-top:1px solid #17244c;
     background: #2c5e91 url(../img/footer-bg.jpg) repeat-x bottom; 
     padding: 18px 0 14px 0;
