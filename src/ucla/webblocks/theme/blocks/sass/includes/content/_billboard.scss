@@ -1,0 +1,10 @@
+#content-billboard {
+    
+    .billboardimage {
+        @include -base-structure-constrained;
+    }
+    
+}
+
+
+

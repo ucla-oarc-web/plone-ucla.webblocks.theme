@@ -12,7 +12,7 @@
 	<replace css:theme-children="#site-header-title-secondary" css:content="#departmenttitle" />
     
     <!-- site search box -->
-    <drop css:cotent="#portal-searchbox .searchSection"/>
+    <drop css:content="#portal-searchbox .searchSection"/>
 	<replace css:theme-children="#site-header-search" css:content="#portal-searchbox" />
     
     <!-- megamenu -->
