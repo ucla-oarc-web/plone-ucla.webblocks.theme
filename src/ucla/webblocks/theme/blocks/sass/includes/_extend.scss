@@ -1,0 +1,14 @@
+/**
+ * Extended set of WebBlocks semantics.
+ */
+
+.container.always-has-margin {
+    @media screen 
+        and (min-width: $breakpoint-small+1) {                                       
+        width: 100% - ($structure-container-gutter*2);
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: $structure-container-gutter;
+        margin-right: $structure-container-gutter;
+    }
+}

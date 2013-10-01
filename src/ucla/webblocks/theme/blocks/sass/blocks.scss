@@ -1,7 +1,14 @@
 @import "WebBlocks";
 
+// WebBlocks Semantics
+@import "includes/fixes";
+@import "includes/extend";
+
+// Component Globals
 @import "includes/font-face";
 @import "includes/base";
+
+// Connector Components
 @import "includes/site";
 @import "includes/page";
 @import "includes/content";

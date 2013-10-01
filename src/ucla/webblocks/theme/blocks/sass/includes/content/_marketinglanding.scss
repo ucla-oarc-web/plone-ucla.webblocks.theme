@@ -1,0 +1,14 @@
+#content-marketinglanding {
+    
+    .billboardimage {
+        @include -base-structure-constrained;
+    }
+    
+    > :not(:first-child) {
+        margin-top: $structure-container-gutter;
+    }
+    
+}
+
+
+
