@@ -9,15 +9,11 @@
 >
     
     <append css:theme="#page-content">
-        
         <div id="content-page">
-        
             <div class="container always-has-margin">
                 <xsl:copy-of css:select=".mainContent" />
             </div>
-        
         </div>
-        
     </append>
     
 </rules>

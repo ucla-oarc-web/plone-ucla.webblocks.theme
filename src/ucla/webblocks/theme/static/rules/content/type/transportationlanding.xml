@@ -8,32 +8,9 @@
     css:if-content="body.portaltype-ucla-content-transportationlanding"
 >
     
-    <!--
-    
-    See marketinglanding.xml for details
-    
-    The fact this is almost a complete duplicate suggests we need a refactor.
-    
-    -->
-    
     <append css:theme="#page-content">
         
         <div id="content-transportationlanding">
-        
-            <div class="clearfix">
-                <xsl:copy-of css:select=".billboardtile"/>
-            </div>
-
-            <div class="clearfix container always-has-margin">
-                <xsl:copy-of css:select=".documentFirstHeading"/>
-                <div class="row">
-                    <xsl:for-each css:select=".button_tile_images">
-                        <div class="panel-2">
-                            <xsl:copy-of css:select=".button_tile_images" />
-                        </div>
-                    </xsl:for-each>
-                </div>
-            </div>
 
             <div class="row container always-has-margin">
                 <xsl:if css:test="#-pt-collectiontile1">

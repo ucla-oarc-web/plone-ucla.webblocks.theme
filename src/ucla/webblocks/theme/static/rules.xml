@@ -11,16 +11,29 @@
                                body.portaltype-ucla-content-transportationlanding, 
                                body.portaltype-ucla-content-page">
             
+            <!-- site composition -->
             <xi:include href="rules/site.xml" />
+            
+            <!-- site components -->
             <xi:include href="rules/site/head.xml" />
             <xi:include href="rules/site/topbar.xml" />
             <xi:include href="rules/site/header.xml" />
             <xi:include href="rules/site/footer.xml" />
+            
+            <!-- page layout determined by portal columns -->
             <xi:include href="rules/page.xml" />
-            <xi:include href="rules/content.xml" />
-            <xi:include href="rules/content/marketinglanding.xml" />
-            <xi:include href="rules/content/transportationlanding.xml" />
-            <xi:include href="rules/content/page.xml" />
+            
+            <!-- generic content structures -->
+            <xi:include href="rules/content/structure/portal-column-one.xml" />
+            <xi:include href="rules/content/structure/portal-column-two.xml" />
+            <xi:include href="rules/content/structure/billboardtile.xml" />
+            <xi:include href="rules/content/structure/heading-first.xml" />
+            <xi:include href="rules/content/structure/imagetiles.xml" />
+            
+            <!-- content structures based on type -->
+            <xi:include href="rules/content/type/marketinglanding.xml" />
+            <xi:include href="rules/content/type/transportationlanding.xml" />
+            <xi:include href="rules/content/type/page.xml" />
             
         </rules>
 	
