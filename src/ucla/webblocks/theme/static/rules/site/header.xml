@@ -30,20 +30,20 @@
                                     <div class="panel-6">
                                         <div class="row small-collapse">
                                             <div class="panel-6">
-                                                <xsl:copy-of select="ul/li[1]/*"/>
+                                                <xsl:copy-of select="ul/li[position() mod 4 = 1]/*"/>
                                             </div>
                                             <div class="panel-6">
-                                                <xsl:copy-of select="ul/li[2]/*"/>
+                                                <xsl:copy-of select="ul/li[position() mod 4 = 2]/*"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="panel-6">
                                         <div class="row small-collapse">
                                             <div class="panel-6">
-                                                <xsl:copy-of select="ul/li[3]/*"/>
+                                                <xsl:copy-of select="ul/li[position() mod 4 = 3]/*"/>
                                             </div>
                                             <div class="panel-6">
-                                                <xsl:copy-of select="ul/li[4]/*"/>
+                                                <xsl:copy-of select="ul/li[position() mod 4 = 0]/*"/>
                                             </div>
                                         </div>
                                     </div>

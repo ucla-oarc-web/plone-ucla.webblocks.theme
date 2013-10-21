@@ -79,19 +79,23 @@
         h2 {
 
             font-size: 1em;
-            margin-bottom: 5px;
 
             a {
                 text-decoration: none;
                 color: #4E8DB6;
             }
-            
-            &:last-child {
-                border-bottom: none;
-            }
 
         }
         
+        .medium-collapse > [class*="panel-"]:last-child > .small-collapse > [class*="panel-"] {
+            
+            padding-top: 4px;
+            
+            &:last-child > h2:last-child {
+                border-bottom: none;
+            }
+        }
+            
         ul {
             
             list-style: none;
@@ -201,6 +205,10 @@
             border-bottom: 1px solid #aaa;
             padding: 5px 5px 7px 0;
             margin-bottom: 2px;
+        }
+        
+        .dropdown h2 {
+            margin-top: 0;
         }
     }
 }
