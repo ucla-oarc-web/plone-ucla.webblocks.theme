@@ -7,7 +7,9 @@
 
     <rules css:if-content="#visual-portal-wrapper">
     
-        <rules css:if-content="body.portaltype-ucla-content-marketinglanding, body.portaltype-ucla-content-page">
+        <rules css:if-content="body.portaltype-ucla-content-marketinglanding, 
+                               body.portaltype-ucla-content-transportationlanding, 
+                               body.portaltype-ucla-content-page">
             
             <xi:include href="rules/site.xml" />
             <xi:include href="rules/site/head.xml" />
@@ -17,6 +19,7 @@
             <xi:include href="rules/page.xml" />
             <xi:include href="rules/content.xml" />
             <xi:include href="rules/content/marketinglanding.xml" />
+            <xi:include href="rules/content/transportationlanding.xml" />
             <xi:include href="rules/content/page.xml" />
             
         </rules>
