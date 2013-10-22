@@ -11,7 +11,7 @@
     <append css:theme="#page-content">
         <div id="content-page">
             <div class="container always-has-margin">
-                <xsl:copy-of css:select=".mainContent" />
+                <xsl:copy-of css:select="#content-core" />
             </div>
         </div>
     </append>
