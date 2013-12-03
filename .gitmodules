@@ -1,3 +1,6 @@
 [submodule "src/ucla/webblocks/WebBlocks"]
 	path = src/ucla/webblocks/WebBlocks
 	url = https://github.com/ucla/WebBlocks.git
+[submodule "src/ucla/webblocks/WebBlocks-kit-core"]
+	path = src/ucla/webblocks/WebBlocks-kit-core
+	url = https://github.com/ucla/WebBlocks-kit-core.git
