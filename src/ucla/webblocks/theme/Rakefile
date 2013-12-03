@@ -66,7 +66,8 @@ end
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Set path to WebBlocks
 
-webblocks_path = Pathname.new(__FILE__).realpath.parent.parent + "WebBlocks-kit-core/_blocks"
+webblocks_kit_path = Pathname.new(__FILE__).realpath.parent.parent + "WebBlocks-kit-core"
+webblocks_path = webblocks_kit_path + "_blocks"
 blocks = WebBlocks.new webblocks_path
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -125,6 +126,10 @@ task :_init do
       sh "git submodule init"
       sh "git submodule update"
     end
+  end
+  Dir.chdir webblocks_kit_path do
+    sh "git submodule init"
+    sh "git submodule update"
   end
   Dir.chdir webblocks_path do
     sh "bundle"
